@@ -1,0 +1,103 @@
+name: Партнерское предложение
+description: Предложите сотрудничество с Росиндастри
+title: "[PARTNER] "
+labels: ["partnership", "business"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Благодарим за интерес к сотрудничеству с платформой Росиндастри!
+        Пожалуйста, заполните форму ниже, чтобы мы могли рассмотреть ваше предложение.
+        
+  - type: input
+    id: company-name
+    attributes:
+      label: Название организации
+      description: Полное название вашей компании
+      placeholder: ООО "Компания"
+    validations:
+      required: true
+      
+  - type: dropdown
+    id: partnership-type
+    attributes:
+      label: Тип партнерства
+      description: Какой вид сотрудничества вас интересует?
+      options:
+        - Технологическое партнерство
+        - Интеграция систем
+        - Финансовые услуги
+        - Логистические услуги
+        - Маркетинговое партнерство
+        - Образовательные программы
+        - Другое
+    validations:
+      required: true
+      
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Описание предложения
+      description: Расскажите подробнее о вашем предложении
+      placeholder: |
+        - Что вы предлагаете
+        - Какую ценность это принесет пользователям платформы
+        - Условия сотрудничества
+    validations:
+      required: true
+      
+  - type: textarea
+    id: benefits
+    attributes:
+      label: Взаимная выгода
+      description: Какую выгоду получат обе стороны?
+      placeholder: Опишите преимущества для обеих сторон
+    validations:
+      required: true
+      
+  - type: input
+    id: website
+    attributes:
+      label: Веб-сайт
+      description: Сайт вашей компании
+      placeholder: https://example.com
+    validations:
+      required: false
+      
+  - type: input
+    id: contact-person
+    attributes:
+      label: Контактное лицо
+      description: ФИО ответственного за партнерство
+      placeholder: Иванов Иван Иванович
+    validations:
+      required: true
+      
+  - type: input
+    id: contact-email
+    attributes:
+      label: Email для связи
+      description: Корпоративный email
+      placeholder: partner@company.ru
+    validations:
+      required: true
+      
+  - type: input
+    id: contact-phone
+    attributes:
+      label: Телефон
+      description: Контактный телефон
+      placeholder: +7 (xxx) xxx-xx-xx
+    validations:
+      required: false
+      
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Подтверждение
+      description: Пожалуйста, подтвердите следующее
+      options:
+        - label: Я представляю интересы указанной организации
+          required: true
+        - label: Предоставленная информация достоверна
+          required: true

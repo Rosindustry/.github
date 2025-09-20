@@ -1,0 +1,14 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Техническая поддержка
+    url: https://rosindustry.pro/support
+    about: Получите помощь по работе с платформой
+  - name: Коммерческие вопросы
+    url: mailto:sales@rosindustry.pro
+    about: По вопросам подключения и тарифов
+  - name: Документация
+    url: https://docs.rosindustry.pro
+    about: Руководства и инструкции по работе с платформой
+  - name: Сообщить об уязвимости
+    url: mailto:security@rosindustry.pro
+    about: Для конфиденциальных сообщений о проблемах безопасности

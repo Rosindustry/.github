@@ -1,0 +1,83 @@
+name: Запрос новой функции
+description: Предложите идею для улучшения платформы
+title: "[FEATURE] "
+labels: ["enhancement", "triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Спасибо за ваше предложение по улучшению платформы Росиндастри!
+        Мы внимательно рассматриваем все идеи от наших пользователей.
+        
+  - type: textarea
+    id: problem
+    attributes:
+      label: Какую проблему это решает?
+      description: Опишите проблему или потребность, которую решит эта функция
+      placeholder: Четкое описание проблемы
+    validations:
+      required: true
+      
+  - type: textarea
+    id: solution
+    attributes:
+      label: Предлагаемое решение
+      description: Опишите, как вы видите реализацию этой функции
+      placeholder: Детальное описание предлагаемого решения
+    validations:
+      required: true
+      
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Альтернативы
+      description: Какие альтернативные решения вы рассматривали?
+      placeholder: Опишите другие возможные подходы
+    validations:
+      required: false
+      
+  - type: dropdown
+    id: priority
+    attributes:
+      label: Приоритет для вашего бизнеса
+      description: Насколько важна эта функция для вас?
+      options:
+        - Критически важно
+        - Очень важно
+        - Важно
+        - Было бы полезно
+        - Приятное дополнение
+    validations:
+      required: true
+      
+  - type: dropdown
+    id: user-type
+    attributes:
+      label: Тип пользователя
+      description: Кто вы на платформе?
+      options:
+        - Производитель
+        - Поставщик
+        - Покупатель
+        - Партнер
+        - Другое
+    validations:
+      required: true
+      
+  - type: input
+    id: company
+    attributes:
+      label: Компания
+      description: Название вашей организации (опционально)
+      placeholder: ООО "Компания"
+    validations:
+      required: false
+      
+  - type: input
+    id: contact
+    attributes:
+      label: Контакт для обсуждения
+      description: Email для детального обсуждения
+      placeholder: email@company.ru
+    validations:
+      required: false
